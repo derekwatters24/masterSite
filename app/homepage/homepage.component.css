@@ -1,0 +1,233 @@
+.navbar-brand h3 {
+  font-weight: 300;
+}
+.navbar {
+  -webkit-box-shadow: 0px 15px 75px -15px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 15px 75px -15px rgba(0,0,0,1);
+  box-shadow: 0px 15px 75px -15px rgba(0,0,0,1);
+}
+/* font related css */
+@font-face {
+  font-family: "ostrich-sans";
+  src: url("/../public/fonts/ostrich-sans-regular.ttf");
+}
+
+  /* loads in ostrich-sans font for header */
+  h1 {
+    margin-top: 0;
+    font-family: 'ostrich-sans';
+    font-size: 60px;
+    color: #212121;
+    text-align: center;
+  }
+  h2{
+    font-size: 23px;
+    font-weight: normal;
+  }
+  P {
+    font-size: 18px;
+    color: #212121;
+  }
+/* end of font related css */
+/*landing related css */
+  /*landing background*/
+  .landing{
+    background: #2196F3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #2196F3, #0D47A1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #2196F3, #0D47A1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #2196F3, #0D47A1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #2196F3, #0D47A1); /* Standard syntax */
+    background-size: cover;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 15px 75px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 15px 75px -15px rgba(0,0,0,1);
+    box-shadow: 0px 15px 75px -15px rgba(0,0,0,1);
+  }
+  /* creates gradient background and height for landing */
+  .landinglogo {
+    background-image: url('./public/images/logo-lg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    margin: auto;
+    z-index: 10px;
+    display: block;
+    height:450px;
+    width: 450px;
+    -webkit-filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 1));
+    -moz-filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 1));
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, .8));
+  }
+  /* sets size and backdrop for landing log */
+/* end of landing related css */
+/* about me section and related css */
+  .content{
+  clear:both;
+  padding-top: 75px;
+  }
+  /* pushes page down 75px to allow buffer between drop shadow and page content */
+
+  #headshot-container{
+  background-image: url('./public/images/headshot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-width:300px;
+  min-height:300px;
+  -webkit-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+  -moz-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+  filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, .8));
+  }
+  /* creates headshot image and drop shadow*/
+
+  h1:before, h1:after {
+    content: "";
+    display: inline-block;
+    width: 15%;
+    margin: 0 10px 0 -55%;
+    vertical-align: middle;
+    border-bottom: 2px solid;
+  }
+
+  h1:after {
+    margin: 0 -55% 0 10px;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* h1 and span create dashes around "about me" title*/
+  #about-section{
+    margin-top: 50px;
+  }
+  #about-buttons-container{
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  #linkedinbutton{
+    display:inline-block;
+    background: #1565C0 url("./public/images/linkedin-lg.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+    -moz-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, .8));
+  }
+
+  #linkedinbutton:hover{
+    background: #1565C0 url("./public/images/linkedin-lg.svg");
+    color: #ffffff;
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, 1));
+    -moz-filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, 1));
+    filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, .8));
+  }
+  a.aboutme-button {
+      display:inline-block;
+      background-color: #1565C0;
+      border: none;
+      color: white;
+      line-height:50px;
+      width:230px;
+      margin:10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+      -moz-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+      filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, .8));
+
+  }
+  a.aboutme-button:hover{
+      background-color: #1565C0;
+      color: #ffffff;
+      -webkit-filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, 1));
+      -moz-filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, 1));
+      filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, .8));
+  }
+  /*CSS relating to buttons in about me section*/
+  #skill-circles {
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom:25px;
+  }
+  .circle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #9E9E9E;
+    margin: 25px;
+    -webkit-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+    -moz-filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 1));
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, .8));
+  }
+  #autocad {
+    background: #9E9E9E url("./public/images/logos/AutoCAD.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #inventor {
+    background: #9E9E9E url("./public/images/logos/inventor.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #revit {
+    background: #9E9E9E url("./public/images/logos/revit.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #solidworks {
+    background: #9E9E9E url("./public/images/logos/solidworks.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #compass {
+    background: #9E9E9E url("./public/images/logos/compass.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #html {
+    background: #9E9E9E url("./public/images/logos/html.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #css {
+    background: #9E9E9E url("./public/images/logos/css.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #javascript {
+    background: #9E9E9E url("./public/images/logos/js.svg");
+    background-size: auto 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+/* end of about me related CSS */
+#footer-section{
+  background-color: #292b2c;
+}

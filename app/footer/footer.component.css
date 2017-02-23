@@ -1,0 +1,74 @@
+/*footer and related CSS */
+.footer{
+  color: #ffffff;
+}
+.footer h1,h2,h3,h4,h5{
+  font-weight:300;
+}
+.footer p{
+  color:#999999;
+  margin:5px;
+}
+.footer h2{
+  margin-top:10px;
+}
+.copyright{
+  justify-content: center;
+  text-align: center;
+}
+.footer a{
+  color:#999999;
+}
+.footer a:hover{
+  color:#ffffff;
+}
+.footer .links{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+#footer{
+  min-height:250px;
+}
+
+.soc-button {
+  min-height: 50px;
+  min-width: 50px;
+  margin:10px;
+  display:inline-block;
+}
+.linkdin{
+  background:url("./public/images/social/linkedin.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.stackof{
+  background:url("./public/images/social/stackoverflow.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.twitter{
+  background:url("./public/images/social/twitter.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.insta{
+  background:url("./public/images/social/instagram.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tumblr{
+  background:url("./public/images/social/tumblr.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.github {
+  background:url("./public/images/social/github.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

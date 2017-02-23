@@ -1,0 +1,67 @@
+<!--header section-->
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+    <span  class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" routerLink="/home"><h3>Derek Watters</h3></a>
+  <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" pageScroll href="#landing" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" pageScroll href="#about-section">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" pageScroll href="#portfolio-section">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" pageScroll href="#email-section">Email</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="landing" id="landing">
+  <div class="landinglogo"><br></div>
+</div>
+<div class="container" id="about-section">
+  <div class="row justify-content-between">
+      <div class="col-md-1" id="headshot-container"></div>
+      <div class="col-md-8 text-justify">
+        <h1>About Me</h1>
+        <p><b>Hi, I’m Derek Watters.</b> My entire life revolves around design (don’t tell my wife). As long as I can remember, I’ve been designing things. This love has lead me down the path of many different passions, including woodworking, fabricating, web design/development, and even a career in Computer Aided Drafting and Design. I’ve designed things from furniture to distribution transformers, and many other machines in between. My love for designing things has always pushed me to understand the world around me and the engineering behind everything I use, including websites. I originally played with HTML and CSS as a teen, and even though I put that interest on the back burner while pursuing a degree in Computer Aided Design, it's always been something I’ve had a passion for. Below I’ve compiled a list of languages and programs I’ve learned over the years, along with a some projects I’ve made as well. I love new projects and the different challenges they bring, and would love to build something great with you. </p>
+      </div>
+    </div>
+  </div>
+    <div class="row" id="resume-section">
+      <div class="col4" id="about-buttons-container">
+        <a href="#" class="aboutme-button">See Resume</a>
+        <a href="#" class="aboutme-button">Download Resume</a>
+        <a href="http://www.linkedin.com/in/derek-watters-974123101" class="aboutme-button" id="linkedinbutton" target="_blank"><br></a>
+      </div>
+    </div>
+    <div class="row" id="skill-circles">
+        <div class="circle" id="autocad"></div>
+        <div class="circle" id="inventor"></div>
+        <div class="circle" id="revit"></div>
+        <div class="circle" id="solidworks"></div>
+        <div class="circle" id="compass"></div>
+        <div class="circle" id="html"></div>
+        <div class="circle" id="css"></div>
+        <div class="circle" id="javascript"></div>
+    </div>
+    <div class="row" id="portfolio-section">
+      <div class="col4" id="portfolio">
+        <portfolioList-component></portfolioList-component>
+      </div>
+    </div>
+    <div class="row" id="email-section">
+      <div class="col4" id="email">
+        <email-component></email-component>
+      </div>
+    </div>
+    <div class="row" id="footer-section">
+      <div class="container">
+      <footer-component></footer-component>
+      </div>
+    </div>
